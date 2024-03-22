@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML-CSS</title>
+    <link rel="stylesheet" href="../../css/styles-list.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="http://localhost:5500/listado/html_css/html/listado.html">Listado HTML-CSS</a>
+            <a href="http://localhost:5500/formulario/html_css/formulario.html">Formulario HTML-CSS</a>
+            <a href="http://localhost:5500/listado/bootstrap/listado-bootstrap.html">Listado Bootstrap</a>
+            <a href="http://localhost:5500/formulario/bootstrap/formulario-bootstrap.html">Formulario Bootstrap</a>
+            <a href="http://localhost:5500/listado/bootstrap/listado-tailwind.html">Listado Tailwind</a>
+            <a href="http://localhost:5500/formulario/tailwindcss/formulario-tailwind.html">Formulario Tailwind</a>
+        </div>
+    </header>
+
+    <div class="header">
+        <h1>formulario Basico con HTML y CSS</h1>
+    </div>
+
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+        <label for="intereses">Intereses:</label>
+        <div class="intereses-container">
+            <input type="checkbox" id="interes1" name="intereses[]" value="deportes">
+            <label for="interes1">Deportes</label>
+        </div>
+        <div class="intereses-container">
+            <input type="checkbox" id="interes2" name="intereses[]" value="tecnología">
+            <label for="interes2">Tecnología</label>
+        </div>
+        <div class="intereses-container">
+            <input type="checkbox" id="interes3" name="intereses[]" value="viajes">
+            <label for="interes3">Viajes</label>
+        </div>
+
+        <div class="intereses-container">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+        <div class="send-button">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
